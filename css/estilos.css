@@ -1,0 +1,291 @@
+/* Declaración de codificación de caracteres */
+@charset "utf-8";
+/* Inicio del Documento CSS */
+
+/* Importación de Google Font "Open Sans" */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+html, body {
+	margin:0;
+	padding:0px;
+	font-size:13px;
+	color:#3c3c3c;
+	font-family: Helvetica, sans-serif;
+	/*background:url(../img/fondo.jpg) no-repeat fixed center top;*/
+	background-size:100% auto;
+	line-height:18px;
+}
+
+header{
+	z-index: 5;
+}
+
+/* Modificación de comportamiento de los enlaces */
+a,a:visited{
+	text-decoration: none;
+}
+
+/* Modificación del comportamiento del encabezado 1 */
+h1 {
+	font-size: 35px;
+}
+
+/* Modificación del comportamiento de encabezados */
+h1,h2,h4 {
+	
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Modificación del comportamiento de los párrafos */
+p {
+	text-align: justify;
+}
+
+form{
+	font-weight: bold;
+}
+
+section {
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 50px;
+	z-index: 1;
+}
+
+footer{
+	background-color: #020202;
+}
+
+.textbox{
+	border-radius: 1px 1px 1px 1px;
+	-moz-border-radius: 1px 1px 1px 1px;
+	-webkit-border-radius: 1px 1px 1px 1px;
+	border: 1px solid #c0c5ce;
+	height: 28px;
+	color: black;
+}
+
+/*Div que contiene la página*/
+.div_container{
+	position:relative;
+	clear:both;
+	display:inline;
+	width: 100%;
+	height: 100%;
+	
+}
+
+#div_main_section{
+	height: 100%;
+	border: 1px solid black;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	background-color:#f49d37;
+}
+
+#div_form{
+	background-color: #f49d37;
+	border: 1px solid black;
+	margin-top: 70px;
+	padding: 30px;
+	font-weight: bold;
+	height: 690PX;
+}
+ /*Pagina de contacto*/
+#div_contacto{ 
+	border: 1px solid black;
+	margin-top: 70px;
+	padding: 30px;
+}
+
+
+/*Página principal*/
+#div_header{
+	clear:both;
+	box-sizing:border-box;
+	border:solid;
+	border-width:10px;
+	border-color:transparent;
+	background-color:#020202;
+	
+}
+
+#div_header img{
+	width:100%;
+	border: 1px solid black;
+}
+
+
+/*Mapa del la pagina del contacto*/
+#mapa {
+	vertical-align: center;
+	width: 100%;
+	height:600px;
+}
+
+/*Div del pie de página*/
+#div_footer {
+	border: 1px solid black; 
+	font-size:12px;
+	position:relative;
+	box-sizing:border-box;
+	clear:both;
+	color: black;
+	text-align:center;
+	padding: 30px;
+}
+
+/* Div del menú de la página */
+.div_menu {
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	height: 30px;
+	width: 100%;
+	padding: 30px;
+	position:fixed;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	background-color: black;
+}
+
+/* css para los fondo de imagenes de las distintas vistas */
+.div_fondo_imagen_index{
+	background-image: url("../img/daysGoneFondo.jpg");
+}
+
+.div_fondo_imagen_galery{
+	background-image: url("../img/fondoJuego.jpg");
+}
+
+.div_fondo_imagen_presupuesto{
+	background-image: url("../img/zombies1.jpg");
+}
+
+.div_fondo_imagen_contact{
+	background-image: url("../img/theLastOfUsFondo.jpg");
+}
+
+/* Estilos comunes de los botones de navegación */
+.button_nav,.button_nav:hover,.button_nav_in,.button_nav_in:hover {
+	text-decoration-color: #f49d37;
+	text-decoration: none;
+	display:inline-block;
+	width: 90px;
+	padding: 5px 30px ;
+	white-space: nowrap;
+	margin: 2px 5px 10px;
+	border: 3px solid black;
+	border-radius: 2px;
+}
+
+/* Estilos independientes de los botones de navegación */
+.button_nav{
+	background: linear-gradient(to bottom, #ffffff 0%,#f49d37 44%,#f49d37 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+
+.button_nav:hover{
+	background: #f49d37;
+	font-size: 14px;
+}
+
+.button_nav_in {
+	border-color:yellow ;
+	background: linear-gradient(to bottom, #ffffff 0%,#f49d37 44%,#f49d37 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6*/
+}
+
+.button_nav_in:hover{
+	background: #f49d37;
+	font-size: 14px;
+}
+
+/* Estilo de imágenes cuadradas artículos */
+#img_right {
+	float:right;
+	margin-left: 20px;
+}
+
+#img_center {
+	float: inherit;
+}
+
+#img_left {
+	float:left;
+	margin-left: 10px;
+	margin-right:20px;
+}
+
+/* Estilos de imágenes alargadas artículos */
+#img_long {
+	width: 600px;
+	height: 200px;
+	margin-left:100px;
+}
+
+#galery{
+	margin-top: 40px;
+	margin-left:30px;
+	width: 200px;
+	height: 250px;
+}
+
+/*******************************************************/
+/*  Inicio de definición de estilos para el formulario */
+/*******************************************************/
+
+.boton_form {
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	display:inline-block;
+	color: #FFF;
+	background: #7abcff; 
+	padding: 6px 30px;
+	white-space: nowrap;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin: 10px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.morado{
+	background: #7abcff;
+	border: 1px solid #1488FF; 
+}
+
+.morado:hover{
+	background: #ADD5FF;
+}
+
+.caja_gris{
+	margin: 10 10 5px;
+	position:  
+	overflow: hidden;
+	padding: 4px;
+	background-color: #F2F2F2;
+	border: 1px solid #6E6E6E;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.register_form{
+	border: 1px solid;
+	position:absolute;
+	margin-top: 270px;
+	margin-left: 140px;
+	padding-left: 80px;
+	margin-right: 140px;
+	padding-right: 120px;
+}
+
+/****************************************************/
+/*  Fin de definición de estilos para el formulario */ 
+/****************************************************/

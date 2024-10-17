@@ -1,0 +1,117 @@
+<html lang="es">
+
+<head>
+
+<!-- Etiquetas meta para el indexeo de la pagina web-->
+<meta charset="UTF-8" />
+<meta name="description" content="Pagina de compra de Videojuegos"/>
+<meta name="robots" content="nofollow" />
+<meta name="Author" content="Manuel Alloza Marco" />
+<meta name="keywords" content="Videojuegos, criticas y compras" />
+<meta name="lang" content="es" />
+<meta name="revisit-after" content="2 days" />
+<meta name="category" content="Prácticas" />
+
+<!-- Declaración de fichero de estilos -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+<title>Focus Gaming - Contacto</title>
+
+</head>
+
+<body>
+
+	<div class="div_container">
+	
+		<header>
+			
+			<!-- html para crear la barra de navegacion de la parte superior de la pagina web-->
+			<nav>				
+				<div class="div_menu">
+					<img src="../img/logo1.png" height="50px" align="center">	
+					<span class="button_nav">
+						<a href="../index.html" style="color:#020202 ;" >Índice</a>
+					</span>	
+					<span class="button_nav">
+						<a href="galery.html" style="color:#020202 ;">Videojuegos</a>
+					</span>
+					<span class="button_nav_in">
+						<a href="#" style="color:#020202 ;">Presupuesto</a>
+					</span>
+					<span class="button_nav">
+						<a href="contact.html" style="color:#020202 ;">Contacto</a>
+					</span>				
+				</div>
+			</nav>
+
+		</header>
+
+		<div id="div_presupuesto" class="div_fondo_imagen_presupuesto">
+			<section>
+				<!-- html para crear el formulario de contacto-->
+				<div id="div_form">
+					<form action="" method="post" id="Formulario" name="Formulario">
+						<h1 ><center>FORMULARIO</center></h1>
+						<h3>RELLENA LOS SIGUIENTES CAMPOS:</h3>
+						<!-- tabla con los campos de texto del formulario -->
+						<table>
+							<tr>
+								<td>Nombre:</td>
+								<td><input id="NOMBRE" name="NOMBRE" class="textbox" type="text" maxlength="15" size="40"  value="" placeholder="Tu nombre" required /> *</td>
+							</tr>
+							<tr>
+								<td>Apellido:</td>
+								<td><input id="APELLIDO" name="APELLIDO" class="textbox" type="text"  maxlength="40" size="40" value="" placeholder="Tu apellido" required/> *</td>
+							</tr>
+							<tr>
+								<td>Telefono<br />de contacto:</td>
+								<td><input id="TELEFONO" name="TELEFONO" class="textbox" type="tel" maxlength="9" size="8" value="" placeholder="Móvil o Fijo" required /> *</td>
+							</tr>
+							<tr>
+								<td>E-mail:</td>
+								<td><input id="E-MAIL" name="E-MAIL" class="textbox" type="email" maxlength="50" size="40" value="" placeholder="Tu direccion@correo.com" required /> *</td>
+							</tr>
+							<tr>
+								<td>Informacion:</td>
+								<td><textarea placeholder="¿Que infomcación desea saber?" required></textarea> *</td>
+							</tr>
+							<!-- checkbox para las condiciones de uso y los permisos -->
+							<tr>
+								<h4><td><input type="checkbox" id="cbCondiciones" name="cbCondiciones" onclick="condicionesVerificadas()" required>Has leido las condiciones y permisos *</td><h4>
+							</tr>
+							<tr>
+								<br>
+								<td colspan="2"> (*) Los campos marcados con asterisco son obligatorios.</td>-
+							</tr>
+						</table>
+
+						<br>
+
+						<div class="botones">
+							<center>
+								<input id="submitFomulario" type="submit" name="submitFormulario" class="boton gris" value="ENVIAR" onclick="" />
+								<input id="resetFormulario" type="reset" name="resetFormulario" class="boton gris" value="BORRAR" />
+							</center>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+
+		<!-- html del pie de página-->
+		<footer>
+			<div id="div_footer" style="color:#f0f6f6">
+				<img src="../img/instagram.png" height="20px" align="center">	
+				<img src="../img/facebook.png" height="20px" align="center">
+				<img src="../img/gorjeo.png" height="20px" align="center">
+				-----Focus Gaming ----- C/Leon XIII CP 50008 ----- Todos los derechos reservados 
+			</div>
+		</footer>
+	
+	</div>
+
+</body>
+
+</html>
